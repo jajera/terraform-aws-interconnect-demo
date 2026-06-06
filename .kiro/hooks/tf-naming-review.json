@@ -1,0 +1,12 @@
+{
+  "name": "Terraform Naming Convention Review",
+  "version": "1.0",
+  "when": {
+    "type": "fileEdited",
+    "filePatterns": ["**/*.tf"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the edited Terraform file and identify any violations of the naming conventions defined in .kiro/steering/terraform-conventions.md. List each violation with the resource address and the specific convention broken."
+  }
+}

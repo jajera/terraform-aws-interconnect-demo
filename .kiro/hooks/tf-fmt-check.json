@@ -1,0 +1,12 @@
+{
+  "name": "Terraform Format Check",
+  "version": "1.0",
+  "when": {
+    "type": "fileEdited",
+    "filePatterns": ["**/*.tf"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "terraform fmt -check"
+  }
+}
