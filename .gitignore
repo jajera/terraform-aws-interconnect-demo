@@ -1,0 +1,27 @@
+# Terraform state files (contain all resource attributes including secrets)
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
+
+# Terraform working directory (provider binaries, plugin cache)
+.terraform/
+
+# Local variable overrides (may contain real credentials)
+*.tfvars.local
+*.auto.tfvars
+override.tf
+override.tf.json
+
+# Terraform crash logs (can contain variable values and state data)
+crash.log
+crash.*.log
+
+# Terraform-generated GCE SSH key pair (saved locally in Step 7 — never commit)
+demo-gce-key
+demo-gce-key.pub
+
+# Generic private key files
+*.pem
+*.key
+id_rsa
+id_ed25519
